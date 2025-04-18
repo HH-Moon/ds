@@ -132,10 +132,11 @@ int main(void)
   OLED_Init();
   HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
   HAL_TIM_Base_Start_IT(&htim2);
-  HAL_TIM_Encoder_Start(&htim2, TIM_CHANNEL_ALL);
+  HAL_TIM_Encoder_Start(&htim3, TIM_CHANNEL_ALL);
   HAL_ADCEx_Calibration_Start(&hadc1);
   HAL_ADC_Start(&hadc1);     //启动ADC转换
   HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
+  Load(7000);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -143,7 +144,6 @@ int main(void)
   while (1)
   {
     // value = HAL_ADC_GetValue(&hadc1);
-
     OLED_NewFrame();
     // Encoder_p = __HAL_TIM_GET_COUNTER(&htim3);
     // Encoder_v = Read_Speed(&htim3);
