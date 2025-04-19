@@ -128,30 +128,6 @@ myds.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\myds.elf.dir\build.make CMakeFiles/myds.elf.dir/build
 .PHONY : myds.elf/fast
 
-Core/Src/Key.obj: Core/Src/Key.c.obj
-.PHONY : Core/Src/Key.obj
-
-# target to build an object file
-Core/Src/Key.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myds.elf.dir\build.make CMakeFiles/myds.elf.dir/Core/Src/Key.c.obj
-.PHONY : Core/Src/Key.c.obj
-
-Core/Src/Key.i: Core/Src/Key.c.i
-.PHONY : Core/Src/Key.i
-
-# target to preprocess a source file
-Core/Src/Key.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myds.elf.dir\build.make CMakeFiles/myds.elf.dir/Core/Src/Key.c.i
-.PHONY : Core/Src/Key.c.i
-
-Core/Src/Key.s: Core/Src/Key.c.s
-.PHONY : Core/Src/Key.s
-
-# target to generate assembly for a file
-Core/Src/Key.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myds.elf.dir\build.make CMakeFiles/myds.elf.dir/Core/Src/Key.c.s
-.PHONY : Core/Src/Key.c.s
-
 Core/Src/PID.obj: Core/Src/PID.c.obj
 .PHONY : Core/Src/PID.obj
 
@@ -961,9 +937,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... myds.elf
-	@echo ... Core/Src/Key.obj
-	@echo ... Core/Src/Key.i
-	@echo ... Core/Src/Key.s
 	@echo ... Core/Src/PID.obj
 	@echo ... Core/Src/PID.i
 	@echo ... Core/Src/PID.s

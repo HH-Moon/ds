@@ -67,14 +67,19 @@ void Error_Handler(void);
 #define BIN2_GPIO_Port GPIOB
 #define KEY1_Pin GPIO_PIN_11
 #define KEY1_GPIO_Port GPIOA
+#define KEY1_EXTI_IRQn EXTI15_10_IRQn
 #define KEY2_Pin GPIO_PIN_15
 #define KEY2_GPIO_Port GPIOA
+#define KEY2_EXTI_IRQn EXTI15_10_IRQn
 #define KEY3_Pin GPIO_PIN_3
 #define KEY3_GPIO_Port GPIOB
+#define KEY3_EXTI_IRQn EXTI3_IRQn
 #define KEY4_Pin GPIO_PIN_4
 #define KEY4_GPIO_Port GPIOB
+#define KEY4_EXTI_IRQn EXTI4_IRQn
 #define KEY5_Pin GPIO_PIN_5
 #define KEY5_GPIO_Port GPIOB
+#define KEY5_EXTI_IRQn EXTI9_5_IRQn
 #define PWMA_Pin GPIO_PIN_6
 #define PWMA_GPIO_Port GPIOB
 

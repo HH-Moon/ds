@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/myds.elf.dir/Core/Src/Key.c.obj"
-  "CMakeFiles/myds.elf.dir/Core/Src/Key.c.obj.d"
   "CMakeFiles/myds.elf.dir/Core/Src/PID.c.obj"
   "CMakeFiles/myds.elf.dir/Core/Src/PID.c.obj.d"
   "CMakeFiles/myds.elf.dir/Core/Src/Task.c.obj"

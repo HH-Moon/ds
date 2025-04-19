@@ -3,12 +3,10 @@
 
 #include "stm32f1xx_hal.h"
 
-extern int is_mode;
-extern int mode_flag;
-extern int flag;
 extern char message_encoder[20];
-extern float Encoder_Angle;
+extern float encoder_result;
 
 void OLED_State();
+void Key_process();
 
 #endif

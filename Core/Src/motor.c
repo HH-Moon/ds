@@ -4,6 +4,7 @@
 #define PWM_MIN -7200
 
 extern TIM_HandleTypeDef htim4;
+int dead_area = 1000;
 
 int abs(int n)
 {
@@ -29,7 +30,7 @@ void Load(int moto1)   //-7200~7200
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, GPIO_PIN_SET);      //AIN1 = 1;
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, GPIO_PIN_RESET);    //AIN2 = 0;
     }
-    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_1, abs(moto1));
+    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_1, abs(moto1) + dead_area);
 }
 
 void Limit(int *Moto1){

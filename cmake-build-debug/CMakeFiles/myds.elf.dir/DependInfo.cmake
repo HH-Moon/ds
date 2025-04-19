@@ -30,7 +30,6 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "G:/STM32-Project/myds/Core/Src/Key.c" "CMakeFiles/myds.elf.dir/Core/Src/Key.c.obj" "gcc" "CMakeFiles/myds.elf.dir/Core/Src/Key.c.obj.d"
   "G:/STM32-Project/myds/Core/Src/PID.c" "CMakeFiles/myds.elf.dir/Core/Src/PID.c.obj" "gcc" "CMakeFiles/myds.elf.dir/Core/Src/PID.c.obj.d"
   "G:/STM32-Project/myds/Core/Src/Task.c" "CMakeFiles/myds.elf.dir/Core/Src/Task.c.obj" "gcc" "CMakeFiles/myds.elf.dir/Core/Src/Task.c.obj.d"
   "G:/STM32-Project/myds/Core/Src/UI.c" "CMakeFiles/myds.elf.dir/Core/Src/UI.c.obj" "gcc" "CMakeFiles/myds.elf.dir/Core/Src/UI.c.obj.d"
