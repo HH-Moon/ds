@@ -62,4 +62,7 @@ CMakeFiles/myds.elf.dir/Core/Src/main.c.obj: \
  C:/PROGRA~2/Arm\ GNU\ Toolchain\ arm-none-eabi/14.2\ rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdarg.h \
  C:/PROGRA~2/Arm\ GNU\ Toolchain\ arm-none-eabi/14.2\ rel1/arm-none-eabi/include/sys/stdio.h \
  G:\STM32-Project\myds\Core\Inc/motor.h \
- G:\STM32-Project\myds\Core\Inc/encoder.h
+ G:\STM32-Project\myds\Core\Inc/encoder.h \
+ G:\STM32-Project\myds\Core\Inc/UI.h G:\STM32-Project\myds\Core\Inc/Key.h \
+ G:\STM32-Project\myds\Core\Inc/gpio.h \
+ G:\STM32-Project\myds\Core\Inc/PID.h

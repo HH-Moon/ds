@@ -28,7 +28,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Core/Inc/adc.h ../Core/Inc/main.h ../Core/Inc/i2c.h ../Core/Inc/tim.h \
  ../Core/Inc/gpio.h ../Core/Inc/oled.h ../Core/Inc/font.h \
- ../Core/Inc/font.h ../Core/Inc/motor.h ../Core/Inc/encoder.h
+ ../Core/Inc/font.h ../Core/Inc/motor.h ../Core/Inc/encoder.h \
+ ../Core/Inc/PID.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 ../Core/Inc/stm32f1xx_hal_conf.h:
@@ -67,3 +68,4 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/font.h:
 ../Core/Inc/motor.h:
 ../Core/Inc/encoder.h:
+../Core/Inc/PID.h:

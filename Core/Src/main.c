@@ -31,6 +31,9 @@
 #include "motor.h"
 #include "encoder.h"
 #include <string.h>
+#include "UI.h"
+#include "Key.h"
+#include "PID.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -51,15 +54,24 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+extern PID_InitTypeDef Turn_PID1;
+extern PID_InitTypeDef Turn_PID2;
+
 //编码
-int Encoder_p = 0;
-int Encoder_v = 0;
-char message[20] = "";
+char message_encoder[20] = "";
+int Encoder_Cnt = 0;
+float Encoder_Angle = 0;
+float Encoder_Integral = 0;
 
 //角度传感
 char message_adc[20] = "";
 uint32_t adc_value = 0;
+float adc_result = 0;
 uint16_t adc[20] = {0};
+//UI
+extern int is_mode;
+extern int mode_flag;
+extern int flag;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -87,9 +99,49 @@ uint16_t ADC_Read(void)
   return adc_result;
 }
 
+float Transform(float Value) {
+  float result = 0;
+  if (Value > 0 && Value < 2050) {
+    result = -Value / 4095 * 360;
+  }
+  else if (Value >2050 && Value < 4095) {
+    result = 360 - Value / 4095 * 360 ;
+  }
+  // else if (Value == 0) {
+  //   result = 0;
+  // }
+  // else if (Value == 2050) {
+  //   result = 180;
+  // }
+  // else if (Value == 3090) {
+  //   result = 90;
+  // }
+  // else if (Value == 1040) {
+  //   result = -90;
+  // }
+  return result;
+}
+
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
   if (htim == &htim2) {
     adc_value = ADC_Read();
+    Encoder_Cnt = Read_Speed(&htim3);
+    Encoder_Integral += Encoder_Cnt;
+    Encoder_Angle = Encoder_Cnt / 1.5;
+    if (Encoder_Angle > 360) {
+      __HAL_TIM_SetCounter(&htim3, 0);
+    }
+    adc_result = Transform(adc_value);
+    // HAL_GPIO_ReadPin(KEY5_GPIO_Port, KEY5_Pin);
+    // if (HAL_GPIO_ReadPin(KEY5_GPIO_Port, KEY5_Pin) == GPIO_PIN_RESET) {
+    //   Load(0);
+    // }
+    // else {
+    //   Load(-2000);
+    // }
+    PID_Calculate(&Turn_PID1, 2050, adc_value);
+    PID_Calculate(&Turn_PID2, 0+Turn_PID1.PID_Out, Encoder_Cnt);
+    Load(Turn_PID2.PID_Out);
   }
 }
 /* USER CODE END 0 */
@@ -136,24 +188,24 @@ int main(void)
   HAL_ADCEx_Calibration_Start(&hadc1);
   HAL_ADC_Start(&hadc1);     //启动ADC转换
   HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
-  Load(7000);
+  PID_Init(&Turn_PID1, 1, 0, 10, 0, 7200);
+  PID_Init(&Turn_PID2, 100, 0, 500, 0, 7200);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    // value = HAL_ADC_GetValue(&hadc1);
     OLED_NewFrame();
-    // Encoder_p = __HAL_TIM_GET_COUNTER(&htim3);
-    // Encoder_v = Read_Speed(&htim3);
-    // sprintf(message, "Encoder_p: %d", Encoder_p);
-    // OLED_PrintString(0, 0, message, &font16x16, OLED_COLOR_NORMAL);
-    // sprintf(message, "Encoder_v: %d", Encoder_v);
-    // OLED_PrintString(0, 17, message, &font16x16, OLED_COLOR_NORMAL);
-    sprintf(message_adc, "adc: %d", adc_value);
-    OLED_PrintString(0, 17, message_adc, &font16x16, OLED_COLOR_NORMAL);
+    sprintf(message_adc, "adc: %.2f", adc_result);
+    OLED_PrintString(0, 0, message_adc, &font16x16, OLED_COLOR_NORMAL);
+    sprintf(message_encoder, "angle: %d", Encoder_Cnt);
+    OLED_PrintString(0, 33, message_encoder, &font16x16, OLED_COLOR_NORMAL);
     OLED_ShowFrame();
+    // Key_process();
+    // OLED_State();
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

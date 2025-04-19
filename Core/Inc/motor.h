@@ -5,5 +5,6 @@
 
 void Load(int moto1);
 void Limit(int *moto1);
+int abs(int n);
 
 #endif

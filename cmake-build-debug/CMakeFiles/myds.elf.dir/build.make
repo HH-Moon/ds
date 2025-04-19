@@ -68,10 +68,66 @@ include CMakeFiles/myds.elf.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/myds.elf.dir/flags.make
 
+CMakeFiles/myds.elf.dir/Core/Src/Key.c.obj: CMakeFiles/myds.elf.dir/flags.make
+CMakeFiles/myds.elf.dir/Core/Src/Key.c.obj: G:/STM32-Project/myds/Core/Src/Key.c
+CMakeFiles/myds.elf.dir/Core/Src/Key.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/myds.elf.dir/Core/Src/Key.c.obj"
+	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Core/Src/Key.c.obj -MF CMakeFiles\myds.elf.dir\Core\Src\Key.c.obj.d -o CMakeFiles\myds.elf.dir\Core\Src\Key.c.obj -c G:\STM32-Project\myds\Core\Src\Key.c
+
+CMakeFiles/myds.elf.dir/Core/Src/Key.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/myds.elf.dir/Core/Src/Key.c.i"
+	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E G:\STM32-Project\myds\Core\Src\Key.c > CMakeFiles\myds.elf.dir\Core\Src\Key.c.i
+
+CMakeFiles/myds.elf.dir/Core/Src/Key.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/myds.elf.dir/Core/Src/Key.c.s"
+	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S G:\STM32-Project\myds\Core\Src\Key.c -o CMakeFiles\myds.elf.dir\Core\Src\Key.c.s
+
+CMakeFiles/myds.elf.dir/Core/Src/PID.c.obj: CMakeFiles/myds.elf.dir/flags.make
+CMakeFiles/myds.elf.dir/Core/Src/PID.c.obj: G:/STM32-Project/myds/Core/Src/PID.c
+CMakeFiles/myds.elf.dir/Core/Src/PID.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/myds.elf.dir/Core/Src/PID.c.obj"
+	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Core/Src/PID.c.obj -MF CMakeFiles\myds.elf.dir\Core\Src\PID.c.obj.d -o CMakeFiles\myds.elf.dir\Core\Src\PID.c.obj -c G:\STM32-Project\myds\Core\Src\PID.c
+
+CMakeFiles/myds.elf.dir/Core/Src/PID.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/myds.elf.dir/Core/Src/PID.c.i"
+	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E G:\STM32-Project\myds\Core\Src\PID.c > CMakeFiles\myds.elf.dir\Core\Src\PID.c.i
+
+CMakeFiles/myds.elf.dir/Core/Src/PID.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/myds.elf.dir/Core/Src/PID.c.s"
+	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S G:\STM32-Project\myds\Core\Src\PID.c -o CMakeFiles\myds.elf.dir\Core\Src\PID.c.s
+
+CMakeFiles/myds.elf.dir/Core/Src/Task.c.obj: CMakeFiles/myds.elf.dir/flags.make
+CMakeFiles/myds.elf.dir/Core/Src/Task.c.obj: G:/STM32-Project/myds/Core/Src/Task.c
+CMakeFiles/myds.elf.dir/Core/Src/Task.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/myds.elf.dir/Core/Src/Task.c.obj"
+	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Core/Src/Task.c.obj -MF CMakeFiles\myds.elf.dir\Core\Src\Task.c.obj.d -o CMakeFiles\myds.elf.dir\Core\Src\Task.c.obj -c G:\STM32-Project\myds\Core\Src\Task.c
+
+CMakeFiles/myds.elf.dir/Core/Src/Task.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/myds.elf.dir/Core/Src/Task.c.i"
+	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E G:\STM32-Project\myds\Core\Src\Task.c > CMakeFiles\myds.elf.dir\Core\Src\Task.c.i
+
+CMakeFiles/myds.elf.dir/Core/Src/Task.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/myds.elf.dir/Core/Src/Task.c.s"
+	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S G:\STM32-Project\myds\Core\Src\Task.c -o CMakeFiles\myds.elf.dir\Core\Src\Task.c.s
+
+CMakeFiles/myds.elf.dir/Core/Src/UI.c.obj: CMakeFiles/myds.elf.dir/flags.make
+CMakeFiles/myds.elf.dir/Core/Src/UI.c.obj: G:/STM32-Project/myds/Core/Src/UI.c
+CMakeFiles/myds.elf.dir/Core/Src/UI.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/myds.elf.dir/Core/Src/UI.c.obj"
+	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Core/Src/UI.c.obj -MF CMakeFiles\myds.elf.dir\Core\Src\UI.c.obj.d -o CMakeFiles\myds.elf.dir\Core\Src\UI.c.obj -c G:\STM32-Project\myds\Core\Src\UI.c
+
+CMakeFiles/myds.elf.dir/Core/Src/UI.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/myds.elf.dir/Core/Src/UI.c.i"
+	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E G:\STM32-Project\myds\Core\Src\UI.c > CMakeFiles\myds.elf.dir\Core\Src\UI.c.i
+
+CMakeFiles/myds.elf.dir/Core/Src/UI.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/myds.elf.dir/Core/Src/UI.c.s"
+	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S G:\STM32-Project\myds\Core\Src\UI.c -o CMakeFiles\myds.elf.dir\Core\Src\UI.c.s
+
 CMakeFiles/myds.elf.dir/Core/Src/adc.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Core/Src/adc.c.obj: G:/STM32-Project/myds/Core/Src/adc.c
 CMakeFiles/myds.elf.dir/Core/Src/adc.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/myds.elf.dir/Core/Src/adc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/myds.elf.dir/Core/Src/adc.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Core/Src/adc.c.obj -MF CMakeFiles\myds.elf.dir\Core\Src\adc.c.obj.d -o CMakeFiles\myds.elf.dir\Core\Src\adc.c.obj -c G:\STM32-Project\myds\Core\Src\adc.c
 
 CMakeFiles/myds.elf.dir/Core/Src/adc.c.i: cmake_force
@@ -85,7 +141,7 @@ CMakeFiles/myds.elf.dir/Core/Src/adc.c.s: cmake_force
 CMakeFiles/myds.elf.dir/Core/Src/encoder.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Core/Src/encoder.c.obj: G:/STM32-Project/myds/Core/Src/encoder.c
 CMakeFiles/myds.elf.dir/Core/Src/encoder.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/myds.elf.dir/Core/Src/encoder.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/myds.elf.dir/Core/Src/encoder.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Core/Src/encoder.c.obj -MF CMakeFiles\myds.elf.dir\Core\Src\encoder.c.obj.d -o CMakeFiles\myds.elf.dir\Core\Src\encoder.c.obj -c G:\STM32-Project\myds\Core\Src\encoder.c
 
 CMakeFiles/myds.elf.dir/Core/Src/encoder.c.i: cmake_force
@@ -99,7 +155,7 @@ CMakeFiles/myds.elf.dir/Core/Src/encoder.c.s: cmake_force
 CMakeFiles/myds.elf.dir/Core/Src/font.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Core/Src/font.c.obj: G:/STM32-Project/myds/Core/Src/font.c
 CMakeFiles/myds.elf.dir/Core/Src/font.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/myds.elf.dir/Core/Src/font.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/myds.elf.dir/Core/Src/font.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Core/Src/font.c.obj -MF CMakeFiles\myds.elf.dir\Core\Src\font.c.obj.d -o CMakeFiles\myds.elf.dir\Core\Src\font.c.obj -c G:\STM32-Project\myds\Core\Src\font.c
 
 CMakeFiles/myds.elf.dir/Core/Src/font.c.i: cmake_force
@@ -113,7 +169,7 @@ CMakeFiles/myds.elf.dir/Core/Src/font.c.s: cmake_force
 CMakeFiles/myds.elf.dir/Core/Src/gpio.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Core/Src/gpio.c.obj: G:/STM32-Project/myds/Core/Src/gpio.c
 CMakeFiles/myds.elf.dir/Core/Src/gpio.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/myds.elf.dir/Core/Src/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/myds.elf.dir/Core/Src/gpio.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Core/Src/gpio.c.obj -MF CMakeFiles\myds.elf.dir\Core\Src\gpio.c.obj.d -o CMakeFiles\myds.elf.dir\Core\Src\gpio.c.obj -c G:\STM32-Project\myds\Core\Src\gpio.c
 
 CMakeFiles/myds.elf.dir/Core/Src/gpio.c.i: cmake_force
@@ -127,7 +183,7 @@ CMakeFiles/myds.elf.dir/Core/Src/gpio.c.s: cmake_force
 CMakeFiles/myds.elf.dir/Core/Src/i2c.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Core/Src/i2c.c.obj: G:/STM32-Project/myds/Core/Src/i2c.c
 CMakeFiles/myds.elf.dir/Core/Src/i2c.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/myds.elf.dir/Core/Src/i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/myds.elf.dir/Core/Src/i2c.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Core/Src/i2c.c.obj -MF CMakeFiles\myds.elf.dir\Core\Src\i2c.c.obj.d -o CMakeFiles\myds.elf.dir\Core\Src\i2c.c.obj -c G:\STM32-Project\myds\Core\Src\i2c.c
 
 CMakeFiles/myds.elf.dir/Core/Src/i2c.c.i: cmake_force
@@ -141,7 +197,7 @@ CMakeFiles/myds.elf.dir/Core/Src/i2c.c.s: cmake_force
 CMakeFiles/myds.elf.dir/Core/Src/main.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Core/Src/main.c.obj: G:/STM32-Project/myds/Core/Src/main.c
 CMakeFiles/myds.elf.dir/Core/Src/main.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/myds.elf.dir/Core/Src/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/myds.elf.dir/Core/Src/main.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Core/Src/main.c.obj -MF CMakeFiles\myds.elf.dir\Core\Src\main.c.obj.d -o CMakeFiles\myds.elf.dir\Core\Src\main.c.obj -c G:\STM32-Project\myds\Core\Src\main.c
 
 CMakeFiles/myds.elf.dir/Core/Src/main.c.i: cmake_force
@@ -155,7 +211,7 @@ CMakeFiles/myds.elf.dir/Core/Src/main.c.s: cmake_force
 CMakeFiles/myds.elf.dir/Core/Src/motor.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Core/Src/motor.c.obj: G:/STM32-Project/myds/Core/Src/motor.c
 CMakeFiles/myds.elf.dir/Core/Src/motor.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/myds.elf.dir/Core/Src/motor.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/myds.elf.dir/Core/Src/motor.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Core/Src/motor.c.obj -MF CMakeFiles\myds.elf.dir\Core\Src\motor.c.obj.d -o CMakeFiles\myds.elf.dir\Core\Src\motor.c.obj -c G:\STM32-Project\myds\Core\Src\motor.c
 
 CMakeFiles/myds.elf.dir/Core/Src/motor.c.i: cmake_force
@@ -169,7 +225,7 @@ CMakeFiles/myds.elf.dir/Core/Src/motor.c.s: cmake_force
 CMakeFiles/myds.elf.dir/Core/Src/oled.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Core/Src/oled.c.obj: G:/STM32-Project/myds/Core/Src/oled.c
 CMakeFiles/myds.elf.dir/Core/Src/oled.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/myds.elf.dir/Core/Src/oled.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/myds.elf.dir/Core/Src/oled.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Core/Src/oled.c.obj -MF CMakeFiles\myds.elf.dir\Core\Src\oled.c.obj.d -o CMakeFiles\myds.elf.dir\Core\Src\oled.c.obj -c G:\STM32-Project\myds\Core\Src\oled.c
 
 CMakeFiles/myds.elf.dir/Core/Src/oled.c.i: cmake_force
@@ -183,7 +239,7 @@ CMakeFiles/myds.elf.dir/Core/Src/oled.c.s: cmake_force
 CMakeFiles/myds.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: G:/STM32-Project/myds/Core/Src/stm32f1xx_hal_msp.c
 CMakeFiles/myds.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/myds.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/myds.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj -MF CMakeFiles\myds.elf.dir\Core\Src\stm32f1xx_hal_msp.c.obj.d -o CMakeFiles\myds.elf.dir\Core\Src\stm32f1xx_hal_msp.c.obj -c G:\STM32-Project\myds\Core\Src\stm32f1xx_hal_msp.c
 
 CMakeFiles/myds.elf.dir/Core/Src/stm32f1xx_hal_msp.c.i: cmake_force
@@ -197,7 +253,7 @@ CMakeFiles/myds.elf.dir/Core/Src/stm32f1xx_hal_msp.c.s: cmake_force
 CMakeFiles/myds.elf.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Core/Src/stm32f1xx_it.c.obj: G:/STM32-Project/myds/Core/Src/stm32f1xx_it.c
 CMakeFiles/myds.elf.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/myds.elf.dir/Core/Src/stm32f1xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/myds.elf.dir/Core/Src/stm32f1xx_it.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Core/Src/stm32f1xx_it.c.obj -MF CMakeFiles\myds.elf.dir\Core\Src\stm32f1xx_it.c.obj.d -o CMakeFiles\myds.elf.dir\Core\Src\stm32f1xx_it.c.obj -c G:\STM32-Project\myds\Core\Src\stm32f1xx_it.c
 
 CMakeFiles/myds.elf.dir/Core/Src/stm32f1xx_it.c.i: cmake_force
@@ -211,7 +267,7 @@ CMakeFiles/myds.elf.dir/Core/Src/stm32f1xx_it.c.s: cmake_force
 CMakeFiles/myds.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Core/Src/syscalls.c.obj: G:/STM32-Project/myds/Core/Src/syscalls.c
 CMakeFiles/myds.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/myds.elf.dir/Core/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/myds.elf.dir/Core/Src/syscalls.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Core/Src/syscalls.c.obj -MF CMakeFiles\myds.elf.dir\Core\Src\syscalls.c.obj.d -o CMakeFiles\myds.elf.dir\Core\Src\syscalls.c.obj -c G:\STM32-Project\myds\Core\Src\syscalls.c
 
 CMakeFiles/myds.elf.dir/Core/Src/syscalls.c.i: cmake_force
@@ -225,7 +281,7 @@ CMakeFiles/myds.elf.dir/Core/Src/syscalls.c.s: cmake_force
 CMakeFiles/myds.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Core/Src/sysmem.c.obj: G:/STM32-Project/myds/Core/Src/sysmem.c
 CMakeFiles/myds.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/myds.elf.dir/Core/Src/sysmem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/myds.elf.dir/Core/Src/sysmem.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Core/Src/sysmem.c.obj -MF CMakeFiles\myds.elf.dir\Core\Src\sysmem.c.obj.d -o CMakeFiles\myds.elf.dir\Core\Src\sysmem.c.obj -c G:\STM32-Project\myds\Core\Src\sysmem.c
 
 CMakeFiles/myds.elf.dir/Core/Src/sysmem.c.i: cmake_force
@@ -239,7 +295,7 @@ CMakeFiles/myds.elf.dir/Core/Src/sysmem.c.s: cmake_force
 CMakeFiles/myds.elf.dir/Core/Src/system_stm32f1xx.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Core/Src/system_stm32f1xx.c.obj: G:/STM32-Project/myds/Core/Src/system_stm32f1xx.c
 CMakeFiles/myds.elf.dir/Core/Src/system_stm32f1xx.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/myds.elf.dir/Core/Src/system_stm32f1xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/myds.elf.dir/Core/Src/system_stm32f1xx.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Core/Src/system_stm32f1xx.c.obj -MF CMakeFiles\myds.elf.dir\Core\Src\system_stm32f1xx.c.obj.d -o CMakeFiles\myds.elf.dir\Core\Src\system_stm32f1xx.c.obj -c G:\STM32-Project\myds\Core\Src\system_stm32f1xx.c
 
 CMakeFiles/myds.elf.dir/Core/Src/system_stm32f1xx.c.i: cmake_force
@@ -253,7 +309,7 @@ CMakeFiles/myds.elf.dir/Core/Src/system_stm32f1xx.c.s: cmake_force
 CMakeFiles/myds.elf.dir/Core/Src/tim.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Core/Src/tim.c.obj: G:/STM32-Project/myds/Core/Src/tim.c
 CMakeFiles/myds.elf.dir/Core/Src/tim.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/myds.elf.dir/Core/Src/tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/myds.elf.dir/Core/Src/tim.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Core/Src/tim.c.obj -MF CMakeFiles\myds.elf.dir\Core\Src\tim.c.obj.d -o CMakeFiles\myds.elf.dir\Core\Src\tim.c.obj -c G:\STM32-Project\myds\Core\Src\tim.c
 
 CMakeFiles/myds.elf.dir/Core/Src/tim.c.i: cmake_force
@@ -266,7 +322,7 @@ CMakeFiles/myds.elf.dir/Core/Src/tim.c.s: cmake_force
 
 CMakeFiles/myds.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj: G:/STM32-Project/myds/Core/Startup/startup_stm32f103c8tx.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building ASM object CMakeFiles/myds.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building ASM object CMakeFiles/myds.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\myds.elf.dir\Core\Startup\startup_stm32f103c8tx.s.obj -c G:\STM32-Project\myds\Core\Startup\startup_stm32f103c8tx.s
 
 CMakeFiles/myds.elf.dir/Core/Startup/startup_stm32f103c8tx.s.i: cmake_force
@@ -280,7 +336,7 @@ CMakeFiles/myds.elf.dir/Core/Startup/startup_stm32f103c8tx.s.s: cmake_force
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: G:/STM32-Project/myds/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj -MF CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj.d -o CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj -c G:\STM32-Project\myds\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c
 
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.i: cmake_force
@@ -294,7 +350,7 @@ CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s: cmak
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj: G:/STM32-Project/myds/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj -MF CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c.obj.d -o CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c.obj -c G:\STM32-Project\myds\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c
 
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.i: cmake_force
@@ -308,7 +364,7 @@ CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.s: 
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj: G:/STM32-Project/myds/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj -MF CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c.obj.d -o CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c.obj -c G:\STM32-Project\myds\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c
 
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.i: cmake_force
@@ -322,7 +378,7 @@ CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: G:/STM32-Project/myds/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj -MF CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj.d -o CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj -c G:\STM32-Project\myds\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c
 
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.i: cmake_force
@@ -336,7 +392,7 @@ CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: G:/STM32-Project/myds/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj -MF CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj.d -o CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj -c G:\STM32-Project\myds\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c
 
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.i: cmake_force
@@ -350,7 +406,7 @@ CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.s: 
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: G:/STM32-Project/myds/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj -MF CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj.d -o CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj -c G:\STM32-Project\myds\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c
 
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.i: cmake_force
@@ -364,7 +420,7 @@ CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.s:
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: G:/STM32-Project/myds/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj -MF CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj.d -o CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj -c G:\STM32-Project\myds\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c
 
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.i: cmake_force
@@ -378,7 +434,7 @@ CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.s
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: G:/STM32-Project/myds/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj -MF CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj.d -o CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj -c G:\STM32-Project\myds\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c
 
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.i: cmake_force
@@ -392,7 +448,7 @@ CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: G:/STM32-Project/myds/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj -MF CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj.d -o CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj -c G:\STM32-Project\myds\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c
 
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.i: cmake_force
@@ -406,7 +462,7 @@ CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.s:
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: G:/STM32-Project/myds/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj -MF CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj.d -o CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj -c G:\STM32-Project\myds\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c
 
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.i: cmake_force
@@ -420,7 +476,7 @@ CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: G:/STM32-Project/myds/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj -MF CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c.obj.d -o CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c.obj -c G:\STM32-Project\myds\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c
 
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i: cmake_force
@@ -434,7 +490,7 @@ CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s: 
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: G:/STM32-Project/myds/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj -MF CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj.d -o CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj -c G:\STM32-Project\myds\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c
 
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i: cmake_force
@@ -448,7 +504,7 @@ CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.s: 
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: G:/STM32-Project/myds/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj -MF CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj.d -o CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj -c G:\STM32-Project\myds\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c
 
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i: cmake_force
@@ -462,7 +518,7 @@ CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.s: 
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: G:/STM32-Project/myds/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj -MF CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj.d -o CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj -c G:\STM32-Project\myds\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c
 
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i: cmake_force
@@ -476,7 +532,7 @@ CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: G:/STM32-Project/myds/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj -MF CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj.d -o CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj -c G:\STM32-Project\myds\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c
 
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.i: cmake_force
@@ -490,7 +546,7 @@ CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.s: 
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: CMakeFiles/myds.elf.dir/flags.make
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: G:/STM32-Project/myds/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: CMakeFiles/myds.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
 	"C:\PROGRA~2\Arm GNU Toolchain arm-none-eabi\14.2 rel1\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj -MF CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj.d -o CMakeFiles\myds.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj -c G:\STM32-Project\myds\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c
 
 CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.i: cmake_force
@@ -503,6 +559,10 @@ CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.
 
 # Object files for target myds.elf
 myds_elf_OBJECTS = \
+"CMakeFiles/myds.elf.dir/Core/Src/Key.c.obj" \
+"CMakeFiles/myds.elf.dir/Core/Src/PID.c.obj" \
+"CMakeFiles/myds.elf.dir/Core/Src/Task.c.obj" \
+"CMakeFiles/myds.elf.dir/Core/Src/UI.c.obj" \
 "CMakeFiles/myds.elf.dir/Core/Src/adc.c.obj" \
 "CMakeFiles/myds.elf.dir/Core/Src/encoder.c.obj" \
 "CMakeFiles/myds.elf.dir/Core/Src/font.c.obj" \
@@ -538,6 +598,10 @@ myds_elf_OBJECTS = \
 # External object files for target myds.elf
 myds_elf_EXTERNAL_OBJECTS =
 
+myds.elf: CMakeFiles/myds.elf.dir/Core/Src/Key.c.obj
+myds.elf: CMakeFiles/myds.elf.dir/Core/Src/PID.c.obj
+myds.elf: CMakeFiles/myds.elf.dir/Core/Src/Task.c.obj
+myds.elf: CMakeFiles/myds.elf.dir/Core/Src/UI.c.obj
 myds.elf: CMakeFiles/myds.elf.dir/Core/Src/adc.c.obj
 myds.elf: CMakeFiles/myds.elf.dir/Core/Src/encoder.c.obj
 myds.elf: CMakeFiles/myds.elf.dir/Core/Src/font.c.obj
@@ -571,7 +635,7 @@ myds.elf: CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal
 myds.elf: CMakeFiles/myds.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
 myds.elf: CMakeFiles/myds.elf.dir/build.make
 myds.elf: CMakeFiles/myds.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Linking C executable myds.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=G:\STM32-Project\myds\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Linking C executable myds.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\myds.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building G:/STM32-Project/myds/cmake-build-debug/myds.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building G:/STM32-Project/myds/cmake-build-debug/myds.bin"

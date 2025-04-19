@@ -128,6 +128,102 @@ myds.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\myds.elf.dir\build.make CMakeFiles/myds.elf.dir/build
 .PHONY : myds.elf/fast
 
+Core/Src/Key.obj: Core/Src/Key.c.obj
+.PHONY : Core/Src/Key.obj
+
+# target to build an object file
+Core/Src/Key.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myds.elf.dir\build.make CMakeFiles/myds.elf.dir/Core/Src/Key.c.obj
+.PHONY : Core/Src/Key.c.obj
+
+Core/Src/Key.i: Core/Src/Key.c.i
+.PHONY : Core/Src/Key.i
+
+# target to preprocess a source file
+Core/Src/Key.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myds.elf.dir\build.make CMakeFiles/myds.elf.dir/Core/Src/Key.c.i
+.PHONY : Core/Src/Key.c.i
+
+Core/Src/Key.s: Core/Src/Key.c.s
+.PHONY : Core/Src/Key.s
+
+# target to generate assembly for a file
+Core/Src/Key.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myds.elf.dir\build.make CMakeFiles/myds.elf.dir/Core/Src/Key.c.s
+.PHONY : Core/Src/Key.c.s
+
+Core/Src/PID.obj: Core/Src/PID.c.obj
+.PHONY : Core/Src/PID.obj
+
+# target to build an object file
+Core/Src/PID.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myds.elf.dir\build.make CMakeFiles/myds.elf.dir/Core/Src/PID.c.obj
+.PHONY : Core/Src/PID.c.obj
+
+Core/Src/PID.i: Core/Src/PID.c.i
+.PHONY : Core/Src/PID.i
+
+# target to preprocess a source file
+Core/Src/PID.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myds.elf.dir\build.make CMakeFiles/myds.elf.dir/Core/Src/PID.c.i
+.PHONY : Core/Src/PID.c.i
+
+Core/Src/PID.s: Core/Src/PID.c.s
+.PHONY : Core/Src/PID.s
+
+# target to generate assembly for a file
+Core/Src/PID.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myds.elf.dir\build.make CMakeFiles/myds.elf.dir/Core/Src/PID.c.s
+.PHONY : Core/Src/PID.c.s
+
+Core/Src/Task.obj: Core/Src/Task.c.obj
+.PHONY : Core/Src/Task.obj
+
+# target to build an object file
+Core/Src/Task.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myds.elf.dir\build.make CMakeFiles/myds.elf.dir/Core/Src/Task.c.obj
+.PHONY : Core/Src/Task.c.obj
+
+Core/Src/Task.i: Core/Src/Task.c.i
+.PHONY : Core/Src/Task.i
+
+# target to preprocess a source file
+Core/Src/Task.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myds.elf.dir\build.make CMakeFiles/myds.elf.dir/Core/Src/Task.c.i
+.PHONY : Core/Src/Task.c.i
+
+Core/Src/Task.s: Core/Src/Task.c.s
+.PHONY : Core/Src/Task.s
+
+# target to generate assembly for a file
+Core/Src/Task.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myds.elf.dir\build.make CMakeFiles/myds.elf.dir/Core/Src/Task.c.s
+.PHONY : Core/Src/Task.c.s
+
+Core/Src/UI.obj: Core/Src/UI.c.obj
+.PHONY : Core/Src/UI.obj
+
+# target to build an object file
+Core/Src/UI.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myds.elf.dir\build.make CMakeFiles/myds.elf.dir/Core/Src/UI.c.obj
+.PHONY : Core/Src/UI.c.obj
+
+Core/Src/UI.i: Core/Src/UI.c.i
+.PHONY : Core/Src/UI.i
+
+# target to preprocess a source file
+Core/Src/UI.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myds.elf.dir\build.make CMakeFiles/myds.elf.dir/Core/Src/UI.c.i
+.PHONY : Core/Src/UI.c.i
+
+Core/Src/UI.s: Core/Src/UI.c.s
+.PHONY : Core/Src/UI.s
+
+# target to generate assembly for a file
+Core/Src/UI.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myds.elf.dir\build.make CMakeFiles/myds.elf.dir/Core/Src/UI.c.s
+.PHONY : Core/Src/UI.c.s
+
 Core/Src/adc.obj: Core/Src/adc.c.obj
 .PHONY : Core/Src/adc.obj
 
@@ -865,6 +961,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... myds.elf
+	@echo ... Core/Src/Key.obj
+	@echo ... Core/Src/Key.i
+	@echo ... Core/Src/Key.s
+	@echo ... Core/Src/PID.obj
+	@echo ... Core/Src/PID.i
+	@echo ... Core/Src/PID.s
+	@echo ... Core/Src/Task.obj
+	@echo ... Core/Src/Task.i
+	@echo ... Core/Src/Task.s
+	@echo ... Core/Src/UI.obj
+	@echo ... Core/Src/UI.i
+	@echo ... Core/Src/UI.s
 	@echo ... Core/Src/adc.obj
 	@echo ... Core/Src/adc.i
 	@echo ... Core/Src/adc.s

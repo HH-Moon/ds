@@ -1,3 +1,5 @@
+"./Core/Src/PID.o"
+"./Core/Src/Task.o"
 "./Core/Src/adc.o"
 "./Core/Src/encoder.o"
 "./Core/Src/font.o"
