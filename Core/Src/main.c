@@ -133,6 +133,9 @@ float Transform_encoder(float Encoder_Angle) {
   else if (Encoder_Angle < -180 && Encoder_Angle > -360) {
     result = Encoder_Angle + 360;
   }
+  else {
+    result = Encoder_Angle;
+  }
   return result;
 }
 
@@ -142,7 +145,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
     Encoder_Cnt = Read_Speed(&htim3);
 
     Encoder_Integral += Encoder_Cnt;
-    Encoder_Angle = (float)Encoder_Integral  / 1.5;
+    Encoder_Angle = Encoder_Integral/1.5;
     if (Encoder_Integral > 540 || Encoder_Integral < -540) {
       Encoder_Integral = Encoder_Integral % 540;
     }
@@ -206,6 +209,7 @@ int main(void)
   HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
   // PID_Init(&Turn_PID1, -0.3, 0, -0.5, 0, 1000); // -0.2    -0.5
   // PID_Init(&Turn_PID2, -1200, 0, -150, 0, 7200);  //-1200    -150
+  Load(0);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -216,7 +220,7 @@ int main(void)
     sprintf(message_adc, "adc: %.2f", adc_result);
     OLED_PrintString(0, 0, message_adc, &font16x16, OLED_COLOR_NORMAL);
     sprintf(message_encoder, "angle: %.2f", encoder_result);
-    OLED_PrintString(0, 33, message_encoder, &font16x16, OLED_COLOR_NORMAL);
+    OLED_PrintString(0, 17, message_encoder, &font16x16, OLED_COLOR_NORMAL);
     OLED_ShowFrame();
     // Key_process();
     // OLED_State();
