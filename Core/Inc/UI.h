@@ -7,6 +7,5 @@ extern char message_encoder[20];
 extern float encoder_result;
 
 void OLED_State();
-void Key_process();
 
 #endif

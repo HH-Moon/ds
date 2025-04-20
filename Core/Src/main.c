@@ -74,7 +74,16 @@ uint16_t adc[20] = {0};
 extern int is_mode;
 extern int mode_flag;
 extern int flag;
+extern int key;
+char message_key[20] = "";
+int currentkey = 0;
+char message[20] = "";
 int KEY = 0;
+int menu_flag = 0;
+char message_0[20] = "";
+char message_sum[20] = "";
+char message_4[20] = "";
+int t_new = 1;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -104,15 +113,15 @@ uint16_t ADC_Read(void)
 
 float Transform_adc(float Value) {
   float result = 0;
-  if (Value > 0 && Value < 2050) {
-    result = -Value / 4095 * 360;
+  if (Value > 0 && Value < 2090) {
+    result = -Value / 4095 * 360 + 3;//+2
   }
-  else if (Value >2050 && Value < 4095) {
-    result = 360 - Value / 4095 * 360 ;
+  else if (Value >2090 && Value < 4095) {
+    result = 360 - Value / 4095 * 360 + 3;  //+3
   }
-  // else if (Value == 0) {
-  //   result = 0;
-  // }
+  else if (Value == 0) {
+    result = 0;
+  }
   // else if (Value == 2050) {
   //   result = 180;
   // }
@@ -139,7 +148,42 @@ float Transform_encoder(float Encoder_Angle) {
   return result;
 }
 
-
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+    if (GPIO_Pin == KEY1_Pin){
+      if (currentkey == 1) {
+        Load(1000);
+      }
+     else {
+       KEY = KEY + 1;
+     }
+    }
+    else if (GPIO_Pin == KEY2_Pin) {
+      if (currentkey == 1) {
+      Load(-1000);
+      }
+      else {
+        KEY = KEY + 2;
+      }
+  }
+    else if (GPIO_Pin == KEY3_Pin) {
+      if (currentkey == 1) {
+        Load(0);
+      }
+      else {
+        KEY = KEY + 3;
+      }
+    }
+    else if (GPIO_Pin ==KEY4_Pin) {
+      currentkey = KEY;
+      KEY = 0;
+    }
+    else if (GPIO_Pin == KEY5_Pin) {
+      KEY = 0;
+      currentkey = 0;
+      Load(0);
+    }
+}
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
   if (htim == &htim2) {
@@ -152,16 +196,22 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
     }
     adc_result = Transform_adc(adc_value);
     encoder_result = Transform_encoder(Encoder_Angle);
-    // HAL_GPIO_ReadPin(KEY5_GPIO_Port, KEY5_Pin);
-    // if (HAL_GPIO_ReadPin(KEY5_GPIO_Port, KEY5_Pin) == GPIO_PIN_RESET) {
+
+    // if (currentkey==1 && key == 1) {
+    // if (KEY == 2) {
+    //   Load(1000);
+    // }
+    // else if (KEY == 3) {
+    //   Load(-1000);
+    // }
+    // else if (KEY == 4) {
     //   Load(0);
     // }
-    // else {
-    //   Load(2000);
     // }
-    // PID_Calculate(&Turn_PID1, 2050 - Encoder_Angle, adc_value);
-    // PID_Calculate(&Turn_PID2, Encoder_Cnt+Turn_PID1.PID_Out, 0);
-    Load(0);
+
+    PID_Calculate(&Turn_PID1, 2090 - Encoder_Angle, adc_value);
+    PID_Calculate(&Turn_PID2, Encoder_Cnt+Turn_PID1.PID_Out, 0);
+    // Load(Turn_PID2.PID_Out);
   }
 }
 /* USER CODE END 0 */
@@ -208,22 +258,59 @@ int main(void)
   HAL_ADCEx_Calibration_Start(&hadc1);
   HAL_ADC_Start(&hadc1);     //启动ADC转换
   HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
-  // PID_Init(&Turn_PID1, -0.2, 0, -0.3, 0, 1000); // -0.2    -0.5
-  // PID_Init(&Turn_PID2, -720, 0, -100, 0, 7200);  //-1200  -150
-  // Load(0);
+  PID_Init(&Turn_PID1, -0.252, 0, -0.6, 0, 1000);   // -0.28  -1
+  PID_Init(&Turn_PID2, 198.45, 0, 60, 0, 7200);
+  // Load(0);             //220.5           100
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    OLED_NewFrame();
-    sprintf(message_adc, "adc: %d", adc_value);
-    OLED_PrintString(0, 0, message_adc, &font16x16, OLED_COLOR_NORMAL);
-    sprintf(message_encoder, "angle: %.2f", encoder_result);
-    OLED_PrintString(0, 17, message_encoder, &font16x16, OLED_COLOR_NORMAL);
-    // OLED_State();
+    // OLED_NewFrame();
+    // sprintf(message_key, "curmode: %d", currentkey);
+    // OLED_PrintString(0, 0, message_key, &font16x16, OLED_COLOR_NORMAL);
+
+
+    // OLED_ShowFrame();
+    if (currentkey!= 8) {
+      OLED_NewFrame();
+      sprintf(message, "当前模式:%d", currentkey);
+      sprintf(message_sum, "累计求和:%d", KEY);
+      OLED_PrintString(0, 0, message, &font15x15, OLED_COLOR_NORMAL);
+      OLED_PrintString(0, 31, message_sum, &font15x15, OLED_COLOR_NORMAL);
+    }
+    if (currentkey== 0) {
+      sprintf(message_0, "已暂停");
+      OLED_PrintString(0, 16, message_0, &font15x15, OLED_COLOR_NORMAL);
+    }
+    if (currentkey==1 ) {
+      OLED_PrintString(0, 0, "Task1_process", &font16x16, OLED_COLOR_NORMAL);
+      OLED_PrintString(0, 17, "1正转2反转3暂停", &font15x15, OLED_COLOR_NORMAL);
+      sprintf(message_encoder, "angle: %.2f", encoder_result);
+      OLED_PrintString(0, 33, message_encoder, &font16x16, OLED_COLOR_NORMAL);
+    }
+    if (currentkey==2 || currentkey==3) {
+      sprintf(message_adc, "摆杆角度: %.2f", adc_result);
+      OLED_PrintString(0, 17, message_adc, &font15x15, OLED_COLOR_NORMAL);
+    }
+    if(currentkey==4) {
+      sprintf(message_4,"倒立平衡状态");
+      OLED_PrintString(0, 30, message_4, &font15x15, OLED_COLOR_NORMAL);
+    }
+    if(currentkey==8) {
+      if(t_new)
+      {
+        t_new--;
+        OLED_NewFrame();
+      }
+    }
     OLED_ShowFrame();
+
+
+    // OLED_NewFrame();
+    // OLED_State();
+    // OLED_ShowFrame();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -285,16 +372,15 @@ void SystemClock_Config(void)
   * @brief  This function is executed in case of error occurrence.
   * @retval None
   */
-void Error_Handler(void)
-{
-  /* USER CODE BEGIN Error_Handler_Debug */
-  /* User can add his own implementation to report the HAL error return state */
-  __disable_irq();
-  while (1)
-  {
+void Error_Handler(void) {
+    /* USER CODE BEGIN Error_Handler_Debug */
+    /* User can add his own implementation to report the HAL error return state */
+    __disable_irq();
+    while (1)
+    {
+    }
+    /* USER CODE END Error_Handler_Debug */
   }
-  /* USER CODE END Error_Handler_Debug */
-}
 
 #ifdef  USE_FULL_ASSERT
 /**
