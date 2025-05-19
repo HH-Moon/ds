@@ -4,7 +4,7 @@
 #define PWM_MIN -7200
 
 extern TIM_HandleTypeDef htim4;
-int dead_area = 1000;
+int dead_area = 800;
 
 int abs(int n)
 {

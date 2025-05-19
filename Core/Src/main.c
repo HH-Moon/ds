@@ -196,22 +196,11 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
     }
     adc_result = Transform_adc(adc_value);
     encoder_result = Transform_encoder(Encoder_Angle);
-
-    // if (currentkey==1 && key == 1) {
-    // if (KEY == 2) {
-    //   Load(1000);
-    // }
-    // else if (KEY == 3) {
-    //   Load(-1000);
-    // }
-    // else if (KEY == 4) {
-    //   Load(0);
-    // }
-    // }
-
-    PID_Calculate(&Turn_PID1, 2090 - Encoder_Angle, adc_value);
-    PID_Calculate(&Turn_PID2, Encoder_Cnt+Turn_PID1.PID_Out, 0);
-    // Load(Turn_PID2.PID_Out);
+    if (currentkey == 4 || currentkey == 8) {
+      PID_Calculate(&Turn_PID1, 2090 - Encoder_Angle, adc_value);
+      PID_Calculate(&Turn_PID2, Encoder_Cnt+Turn_PID1.PID_Out, 0);
+      Load(Turn_PID2.PID_Out);
+    }
   }
 }
 /* USER CODE END 0 */
@@ -258,8 +247,8 @@ int main(void)
   HAL_ADCEx_Calibration_Start(&hadc1);
   HAL_ADC_Start(&hadc1);     //启动ADC转换
   HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
-  PID_Init(&Turn_PID1, -0.252, 0, -0.6, 0, 1000);   // -0.28  -1
-  PID_Init(&Turn_PID2, 198.45, 0, 60, 0, 7200);
+  PID_Init(&Turn_PID1, -2.5, 0, -2.9, 0, 1000);   // -0.28  -1
+  PID_Init(&Turn_PID2, 2200, 0, 340, 0, 7200);
   // Load(0);             //220.5           100
   /* USER CODE END 2 */
 
@@ -378,6 +367,7 @@ void Error_Handler(void) {
     __disable_irq();
     while (1)
     {
+
     }
     /* USER CODE END Error_Handler_Debug */
   }
